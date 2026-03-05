@@ -5,7 +5,7 @@ const rateLimit = require("express-rate-limit");
 const movieRoutes = require("./routes/movie");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || "https://cinemalens.vercel.app";
 
 const missing = [];
 if (!process.env.OMDB_API_KEY)       missing.push("OMDB_API_KEY");
